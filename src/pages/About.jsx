@@ -34,7 +34,7 @@ function About() {
                 theme === "light"
                   ? "bg-gradient-to-b from-slate-100 to-slate-400 text-black"
                   : "bg-gradient-to-b from-slate-500 to-slate-900 text-white"
-              } flex flex-col gap-4 w-full p-4 rounded-md shadow-md`}
+              } flex flex-col gap-4 w-full p-4 rounded-md shadow-md transition-all ease-in-out duration-300`}
             >
               {language === "en" ? (
                 <>
