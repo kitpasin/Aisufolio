@@ -1,7 +1,7 @@
 import { useTheme } from "../context/theme/ThemeContext";
 import { Languages } from "../data/skills/Languages";
 import { LibrariesAndFrameworks } from "../data/skills/LibrariesAndFrameworks";
-import { UXUIAndDesign } from "../data/skills/UxUiAndDesign";
+import { UXUIAndDesign } from "../data/skills/UXUIAndDesign";
 import { useEffect, useState } from "react";
 import { PulseLoader } from "react-spinners";
 
