@@ -27,7 +27,7 @@ function Contact() {
                   theme === "light"
                     ? "bg-gradient-to-b from-slate-100 to-slate-400 text-black"
                     : "bg-gradient-to-b from-slate-500 to-slate-900 text-white"
-                } w-full flex flex-col items-center p-4 gap-4 rounded-md shadow-md`}
+                } w-full flex flex-col items-center p-4 gap-4 rounded-md shadow-md transition-all ease-in-out duration-300`}
               >
                 <figure className="bg-white rounded-full w-full h-[150px] max-w-[150px]">
                   <img
