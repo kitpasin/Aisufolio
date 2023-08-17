@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "./context/theme/ThemeContext";
-import { Routes as Router, Route, useLocation } from "react-router-dom";
+import { Routes as Router, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import Header from "./components/layout/Header";
 import Sidebar from "./components/layout/Sidebar";
@@ -12,11 +12,24 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [display, setDisplay] = useState(window.innerWidth);
   const { theme } = useTheme();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const currentPageEN = localStorage.getItem("currentPageEN")
+    const currentPageTH = localStorage.getItem("currentPageTH")
+    if (!currentPageEN) {
+      localStorage.setItem("currentPageEN", "About Me")
+      navigate("/about")
+    }
+    if (!currentPageTH) {
+      localStorage.setItem("currentPageTH", "เกี่ยวกับฉัน")
+      navigate("/about")
+    }
+  }, [])
 
   function handleResize() {
     setDisplay(window.innerWidth);
   }
-
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     () => {
