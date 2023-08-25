@@ -15,6 +15,7 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    localStorage.clear()
     const currentPageEN = localStorage.getItem("currentPageEN")
     const currentPageTH = localStorage.getItem("currentPageTH")
     if (!currentPageEN) {
