@@ -15,16 +15,35 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    localStorage.clear()
     const currentPageEN = localStorage.getItem("currentPageEN")
     const currentPageTH = localStorage.getItem("currentPageTH")
     if (!currentPageEN) {
       localStorage.setItem("currentPageEN", "About Me")
       navigate("/about")
+    } else {
+      if(currentPageEN === "About Me") {
+        navigate("/about")
+      } else if (currentPageEN === "My Skills") {
+        navigate("/skills")
+      } else if (currentPageEN === "Work") {
+        navigate("/work")
+      } else if (currentPageEN === "Contact") {
+        navigate("/contact")
+      }
     }
     if (!currentPageTH) {
       localStorage.setItem("currentPageTH", "เกี่ยวกับฉัน")
       navigate("/about")
+    } else {
+      if(currentPageTH === "เกี่ยวกับฉัน") {
+        navigate("/about")
+      } else if (currentPageTH === "ความสามารถ") {
+        navigate("/skills")
+      } else if (currentPageTH === "ผลงาน") {
+        navigate("/work")
+      } else if (currentPageTH === "ติดต่อ") {
+        navigate("/contact")
+      }
     }
   }, [])
 
