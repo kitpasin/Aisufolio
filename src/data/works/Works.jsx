@@ -49,9 +49,9 @@ export const Works = [
     id: "3",
     title: "Aisuflix (Netflix Clone)",
     description_en:
-      "Website for viewing entertainment media.",
+      "Website for viewing entertainment media. ID:admin, Password:1234",
     description_th:
-      "เว็บสำหรับการรับชมสื่อบรรเทิง",
+      "เว็บสำหรับการรับชมสื่อบรรเทิง ID:admin, Password:1234",
     url: "https://aisuflix.netlify.app/",
     images: [
       {
