@@ -45,4 +45,31 @@ export const Works = [
       },
     ],
   },
+  {
+    id: "3",
+    title: "Aisuflix (Netflix Clone)",
+    description_en:
+      "Website for viewing entertainment media.",
+    description_th:
+      "เว็บสำหรับการรับชมสื่อบรรเทิง",
+    url: "https://aisuflix.netlify.app/",
+    images: [
+      {
+        id: "1",
+        path: "/images/aisuflix_login.jpg",
+      },
+      {
+        id: "2",
+        path: "/images/aisuflix_home.jpg",
+      },
+      {
+        id: "3",
+        path: "/images/aisuflix_content.jpg",
+      },
+      {
+        id: "3",
+        path: "/images/aisuflix_detail.jpg",
+      },
+    ],
+  },
 ];
