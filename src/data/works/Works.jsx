@@ -72,4 +72,27 @@ export const Works = [
       },
     ],
   },
+  {
+    id: "4",
+    title: "Aisumanga (Mangakakalot Clone)",
+    description_en:
+      "Website for viewing manga.",
+    description_th:
+      "เว็บสำหรับการอ่านการ์ตูน",
+    url: "https://aisumanga.netlify.app/",
+    images: [
+      {
+        id: "1",
+        path: "/images/aisumanga_home.jpg",
+      },
+      {
+        id: "2",
+        path: "/images/aisumanga_read.jpg",
+      },
+      {
+        id: "3",
+        path: "/images/aisumanga_chapter.jpg",
+      },
+    ],
+  },
 ];
